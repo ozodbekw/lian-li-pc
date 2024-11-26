@@ -1,0 +1,30 @@
+/* Header */
+.siteheader {
+  height: 80px;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: sticky;
+  top: 0;
+}
+
+.siteheader__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  height: 70px;
+}
+
+.header__list {
+  display: flex;
+  gap: 40px;
+}
+
+.header__list-link {
+  font-size: $h4-fs;
+  color: $light-cream;
+  &:hover {
+    color: $pale-orange;
+  }
+}

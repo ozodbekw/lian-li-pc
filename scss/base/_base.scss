@@ -1,0 +1,111 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+body {
+  font-family: "Fraunces", sans-serif;
+  font-size: $body-fs;
+  line-height: $body-lh;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Hero */
+
+.hero {
+  color: #fff;
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+.hero__container {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__title {
+  margin-top: 10rem;
+  font-size: $h1-fs;
+  width: 600px;
+}
+
+.hero__describtion {
+  width: 500px;
+  font-size: $h4-fs;
+}
+
+.hero-video {
+  width: 100%;
+  height: 112%;
+  position: absolute;
+  top: -80px;
+  left: 0;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Features */
+
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 80px 0;
+}
+
+.features__title {
+  font-size: $h1-fs;
+}
+
+.features__card {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.features__img {
+  width: 300px;
+}
+
+.features__title {
+  font-size: $h3-fs;
+  margin-bottom: 2.5rem;
+}
+.features__desscribtion {
+  font-size: $body-fs;
+  width: 600px;
+}
