@@ -442,6 +442,7 @@ main {
   background-color: rgba(0, 0, 0, 0.6);
   position: sticky;
   top: 0;
+  z-index: 10;
 }
 
 .siteheader__container {
